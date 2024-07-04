@@ -862,7 +862,7 @@ body.nav-active { overflow: hidden; }
 }
 
 }
-@media screen and (min-width: 1488){
+@media screen and (max-width: 1488){
   .footer__logo{
    float: left;
  }
