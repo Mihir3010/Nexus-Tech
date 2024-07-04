@@ -569,7 +569,7 @@ body.nav-active { overflow: hidden; }
 }
 @media screen and (max-width: 1488px) {
  .button2{
-   margin-bottom: 55px;
+   margin-bottom: 0px;
  }
 @media screen and (max-width: 576px) {
  .button2{
