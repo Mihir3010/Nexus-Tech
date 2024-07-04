@@ -2,6 +2,10 @@
   #main.css
 \*-----------------------------------*/
 
+/**
+ * 
+ */
+
 
 
 
@@ -469,9 +473,9 @@ body.nav-active { overflow: hidden; }
   position: absolute;
   left: 0;
   top: 0;
-/*   height: 100%;
-  width: 100%;
-  background-color: #f440af; */
+  /* height: 100%; */
+  /* width: 100%; */
+  
   border-radius: 25px 25px 0 25px;
 }
 .overlay::before,
@@ -558,23 +562,30 @@ body.nav-active { overflow: hidden; }
 .swiper-pagination-bullet-active{
   background-color: var(--cinnamon-satin);
 }
-
+@media screen and (max-width: 1488px) {
+  .slide-content{
+    margin: 0 10px;
+  }
+  .swiper-navBtn{
+    display: flex;
+  }
+  
+}
 @media screen and (max-width: 768px) {
   .slide-content{
     margin: 0 10px;
   }
   .swiper-navBtn{
-    display: none;
+    display: flex;
   }
+  
 }
-@media screen and (max-width: 1488px) {
- .button2{
-   margin-bottom: 0px;
- }
 @media screen and (max-width: 576px) {
  .button2{
-   margin-bottom: 55px;
+   margin-bottom: 75px;
  }
+  
+}
 
 /*-----------------------------------*\
   #ABOUT
@@ -780,7 +791,7 @@ body.nav-active { overflow: hidden; }
 .footer ul {
   list-style: none;
   padding-left: 0;
-	gap:20px;
+  gap: 20px;
 }
 
 .footer li {
@@ -828,11 +839,6 @@ body.nav-active { overflow: hidden; }
   }
 }
 
-@media screen and (min-width: 1280px) {
-  .footer__nav > * {
-    flex: 1;
-  }
-
 @media screen and (min-width: 40.375em) {
   .footer__nav > * {
     flex: 1;
@@ -846,33 +852,48 @@ body.nav-active { overflow: hidden; }
   .footer__nav {
     flex: 2 0px;
   }
+  .legal p{
+     gap: 10px;
+     padding-top: 25px;
+  }
 }
 @media screen and (min-width: 576){
     .footer__logo{
      float: left;
    }
+   .footer ul {
+    gap: 8px;
+    padding: 0;
+  }
+  
+}
+@media screen and (min-width: 768){
+  .footer__logo{
+   float: left;
+ }
+ .footer ul {
+  gap: 2px;
+  padding: 0;
+}
+
 }
 @media screen and (min-width: 992){
   .footer__logo{
    float: left;
  }
  .footer ul {
-  gap: 0px;
+  gap: 4px;
   padding: 0;
 }
 
 }
-@media screen and (max-width: 1488){
+@media screen and (min-width: 1488){
   .footer__logo{
    float: left;
  }
  .footer ul {
   gap: 0px;
   padding: 0;
-}
-	.container 
-{max-width: 1240px;}
-
 }
 
 }
