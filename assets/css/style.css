@@ -852,7 +852,26 @@ body.nav-active { overflow: hidden; }
      float: left;
    }
 }
+@media screen and (min-width: 992){
+  .footer__logo{
+   float: left;
+ }
+ .footer ul {
+  gap: 0px;
+  padding: 0;
+}
 
+}
+@media screen and (min-width: 1488){
+  .footer__logo{
+   float: left;
+ }
+ .footer ul {
+  gap: 0px;
+  padding: 0;
+}
+
+}
 
 
 
